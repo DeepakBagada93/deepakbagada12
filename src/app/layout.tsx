@@ -8,9 +8,22 @@ import SiteFooter from '@/components/site-footer';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Deepak Bagada | Web App Developer, AI Agent Expert & Lead Generation Specialist in Junagadh',
-  description: 'Deepak Bagada: Your expert webapp developer and AI agent specialist in Junagadh, Gujarat. I build high-performance Next.js, React, and Laravel applications, custom AI SaaS solutions, and AI agents. Specializing in lead generation strategies to grow your business. Contact me at deeepakbagada25@gmail.com or +91 7016179234.',
-  keywords: ['webapp developer junagadh', 'ai agent expert junagadh', 'lead generation expert junagadh', 'Next.js developer', 'React developer', 'Laravel developer', 'AI solutions', 'SaaS expert', 'PHP', 'WordPress', 'web app developer', 'ai solutions provider', 'custom ai agent'],
+  title: 'Deepak Bagada | Best Web Developer, AI Expert & Lead Generation Specialist in Junagadh',
+  description: 'Deepak Bagada: Your expert web developer and AI agent specialist in Junagadh, Gujarat. I build high-performance Next.js, React, and Laravel applications, custom AI SaaS solutions, and AI agents. Specializing in lead generation strategies to grow your business. Contact me at deeepakbagada25@gmail.com or +91 7016179234.',
+  keywords: [
+    'best web developer in junagadh', 
+    'ai expert in junagadh', 
+    'ai agent developer in junagadh', 
+    'lead generation expert in junagadh', 
+    'Next.js developer junagadh', 
+    'React developer junagadh', 
+    'Laravel developer junagadh', 
+    'AI solutions junagadh', 
+    'SaaS expert junagadh', 
+    'PHP developer junagadh', 
+    'WordPress developer junagadh', 
+    'custom AI agent junagadh'
+  ],
 };
 
 export default function RootLayout({
