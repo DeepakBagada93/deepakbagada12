@@ -1,15 +1,10 @@
 import type { Metadata } from 'next';
-import { GeistSans } from 'geist/font/sans';
+import { GeistSans } from 'geist/font/sans'; // GeistSans is an object with .variable and .className properties
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
 import { cn } from '@/lib/utils';
-
-const geistSans = GeistSans({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'Deepak Bagada | Web Developer, AI SaaS & Marketing Expert',
@@ -22,8 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={cn(geistSans.variable, 'antialiased font-sans flex flex-col min-h-screen')}>
+    // Apply GeistSans.variable (which is a class name that sets the CSS var --font-geist-sans) to the html tag.
+    // Also keep the "dark" class.
+    <html lang="en" className={cn(GeistSans.variable, 'dark')}>
+      {/*
+        The body tag uses font-sans from Tailwind.
+        Tailwind's font-sans is configured to use var(--font-geist-sans).
+        The --font-geist-sans CSS variable is defined by the GeistSans.variable class applied to the html tag.
+      */}
+      <body className={cn('font-sans', 'antialiased', 'flex', 'flex-col', 'min-h-screen')}>
         <SiteHeader />
         <main className="flex-grow">
           {children}
