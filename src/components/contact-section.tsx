@@ -3,8 +3,7 @@
 
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label'; // Label might still be useful for semantic purposes, or remove if not.
-import { Mail, MapPin, Phone, Linkedin, Github, Twitter, Instagram, MessageSquare } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github, Twitter, Instagram, MessageSquare } from 'lucide-react';
 import { useScrollEffect } from '@/hooks/use-scroll-effect';
 import Link from 'next/link';
 
@@ -20,31 +19,31 @@ export default function ContactSection() {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://www.linkedin.com/in/deepakbagada', // Replace with actual link
+      url: 'https://www.linkedin.com/in/deepakbagada', 
       ariaLabel: 'Deepak Bagada on LinkedIn',
     },
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/deepakbagada', // Replace with actual link
+      url: 'https://github.com/deepakbagada', 
       ariaLabel: 'Deepak Bagada on GitHub',
     },
     {
       name: 'Twitter / X',
       icon: Twitter,
-      url: 'https://x.com/deepakbagada', // Replace with actual link
+      url: 'https://x.com/deepakbagada', 
       ariaLabel: 'Deepak Bagada on Twitter X',
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://instagram.com/deepakbagada_dev', // Replace with actual link
+      url: 'https://instagram.com/deepakbagada_dev', 
       ariaLabel: 'Deepak Bagada on Instagram',
     },
     {
       name: 'WhatsApp',
-      icon: MessageSquare, // Using MessageSquare as a WhatsApp-like icon
-      url: 'https://wa.me/910000000000', // Replace with actual WhatsApp number
+      icon: MessageSquare, 
+      url: 'https://wa.me/917016179234', 
       ariaLabel: 'Chat with Deepak Bagada on WhatsApp',
     },
   ];
@@ -76,8 +75,8 @@ export default function ContactSection() {
                 <Mail className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-xl text-foreground mb-1">Email</h4>
-                  <a href="mailto:deepak.bagada@example.com" className="text-muted-foreground hover:text-primary transition-colors break-all">
-                    deepak.bagada@example.com
+                  <a href="mailto:deeepakbagada25@gmail.com" className="text-muted-foreground hover:text-primary transition-colors break-all">
+                    deeepakbagada25@gmail.com
                   </a>
                 </div>
               </div>
@@ -85,20 +84,12 @@ export default function ContactSection() {
                 <Phone className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-xl text-foreground mb-1">Phone / WhatsApp</h4>
-                  <a href="tel:+910000000000" className="text-muted-foreground hover:text-primary transition-colors block">
-                    +91 (000) 000-0000 (Call)
+                  <a href="tel:+917016179234" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +91 70161 79234 (Call)
                   </a>
-                   <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors block">
+                   <a href="https://wa.me/917016179234" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors block">
                     Chat on WhatsApp
                   </a>
-                </div>
-              </div>
-              <div className="lg:col-span-2 flex items-start space-x-4 p-6 rounded-lg bg-card/80 shadow-lg hover:shadow-primary/20 transition-shadow">
-                <MapPin className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-xl text-foreground mb-1">Location</h4>
-                  <p className="text-muted-foreground">Junagadh, Gujarat, India</p>
-                  <p className="text-xs text-muted-foreground/70 mt-1">Available for remote work globally.</p>
                 </div>
               </div>
             </div>
@@ -112,7 +103,7 @@ export default function ContactSection() {
                 <Button
                   key={social.name}
                   variant="outline"
-                  size="lg" // Made icons slightly larger
+                  size="lg" 
                   className="p-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full  hover:bg-primary/10 group"
                   asChild
                 >
@@ -128,7 +119,7 @@ export default function ContactSection() {
           <div className="mt-10 pt-10 border-t border-border/30 text-center lg:text-left">
             <h4 className="text-2xl font-semibold mb-3 text-foreground">Open to Opportunities</h4>
             <p className="text-muted-foreground md:text-lg">
-              Currently accepting new projects and exploring collaborations. If you have an idea or a challenge, I'd love to hear about it.
+              Currently accepting new projects and exploring collaborations. If you have an idea or a challenge, I'd love to hear about it. Based in Junagadh, Gujarat, and available for remote work globally.
             </p>
           </div>
         </div>
