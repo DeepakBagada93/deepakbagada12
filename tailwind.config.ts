@@ -66,6 +66,9 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+  		fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+      },
   		keyframes: {
   			'accordion-down': {
   				from: {
@@ -82,11 +85,23 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+        'spin-slow': { // Added for hero section decorative element
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '50%': { transform: 'rotate(15deg) scale(1.05)' },
+        },
+        // Ensure tailwindcss-animate keyframes are implicitly available or define specific ones if needed
+        // Example for fade-in-up, though tailwindcss-animate provides this
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+        'spin-slow': 'spin-slow 8s ease-in-out infinite alternate', // Added
+        'fade-in-up': 'fade-in-up 0.5s ease-out forwards', // Example
   		}
   	}
   },
