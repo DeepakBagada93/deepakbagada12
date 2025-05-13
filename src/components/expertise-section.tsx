@@ -3,26 +3,27 @@
 
 import { useRef } from 'react';
 import ExpertiseCard from './expertise-card';
-import { CodeXml, BrainCircuit, Megaphone } from 'lucide-react';
+import { CodeXml, BrainCircuit, Megaphone, Network, Palette, Rocket } from 'lucide-react';
 import { useScrollEffect } from '@/hooks/use-scroll-effect';
 
 const expertiseData = [
   {
     icon: CodeXml,
-    title: "Web Development",
-    description: "Building responsive, high-performance websites and web applications using modern technologies. Proficient in front-end and back-end development, ensuring seamless user experiences and robust functionality.",
+    title: "Modern Web Development",
+    description: "Building responsive, high-performance websites and web applications using Next.js, React, Laravel, PHP, WordPress, HTML, and CSS. As a dedicated webapp developer in Junagadh, I focus on seamless user experiences and robust functionality.",
   },
   {
     icon: BrainCircuit,
-    title: "AI SaaS Expert",
-    description: "Specializing in the development and integration of AI-powered SaaS solutions. Leveraging machine learning and cloud platforms to create intelligent applications that drive business growth and efficiency.",
+    title: "AI & SaaS Solutions",
+    description: "Your AI agent expert in Junagadh, specializing in AI-powered SaaS solutions and custom AI agents. Leveraging machine learning (Genkit) and cloud platforms to create intelligent applications that drive business growth and efficiency.",
   },
   {
     icon: Megaphone,
-    title: "Marketing Expert",
-    description: "Crafting data-driven marketing strategies to enhance brand visibility and customer engagement. Experienced in digital marketing, SEO, content creation, and campaign management to achieve impactful results.",
+    title: "Digital Marketing & Leads",
+    description: "Crafting data-driven marketing strategies for brand visibility and customer engagement. As a lead generation expert in Junagadh, I utilize digital marketing, SEO, and content creation for impactful results.",
   },
 ];
+
 
 export default function ExpertiseSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -30,7 +31,10 @@ export default function ExpertiseSection() {
   const cardRefs = expertiseData.map(() => useRef<HTMLDivElement>(null));
 
   useScrollEffect(titleRef);
-  cardRefs.forEach(ref => useScrollEffect(ref, { effectClasses: ['fade-in', 'slide-in-from-bottom-12'], duration: '900ms' }));
+  cardRefs.forEach((ref, index) => useScrollEffect(ref, { 
+    effectClasses: ['fade-in', index % 2 === 0 ? 'slide-in-from-left-12' : 'slide-in-from-right-12'], 
+    duration: '900ms' 
+  }));
 
   return (
     <section id="expertise" ref={sectionRef} className="bg-background/70 backdrop-blur-md">
@@ -39,7 +43,7 @@ export default function ExpertiseSection() {
           <div className="space-y-4">
             <div 
               ref={titleRef}
-              className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm font-medium text-primary shadow-sm"
+              className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm font-medium text-primary shadow-sm opacity-0 transform"
             >
               My Expertise
             </div>
@@ -50,7 +54,7 @@ export default function ExpertiseSection() {
               I blend creativity with technical prowess to deliver outstanding digital experiences across development, AI, and marketing.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl pt-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl pt-8">
             {expertiseData.map((expertise, index) => (
               <div key={index} ref={cardRefs[index]} className="opacity-0 transform">
                 <ExpertiseCard

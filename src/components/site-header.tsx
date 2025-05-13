@@ -12,10 +12,15 @@ export default function SiteHeader() {
           </svg>
           <span className="font-bold">Deepak Bagada</span>
         </Link>
-        <nav className="flex flex-1 items-center space-x-4">
-          {/* Navigation links can be added here if needed */}
+        <nav className="flex flex-1 items-center space-x-6">
+          <Link href="/#expertise" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Expertise
+          </Link>
+          <Link href="/#projects" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Projects
+          </Link>
         </nav>
-        <Button asChild variant="ghost">
+        <Button asChild variant="outline" size="sm">
           <a href="#contact">Contact Me</a>
         </Button>
       </div>
