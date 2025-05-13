@@ -3,30 +3,51 @@
 
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Label } from '@/components/ui/label'; // Label might still be useful for semantic purposes, or remove if not.
+import { Mail, MapPin, Phone, Linkedin, Github, Twitter, Instagram, MessageSquare } from 'lucide-react';
 import { useScrollEffect } from '@/hooks/use-scroll-effect';
+import Link from 'next/link';
 
 export default function ContactSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
 
   useScrollEffect(titleRef);
-  useScrollEffect(cardRef, { effectClasses: ['fade-in', 'slide-in-from-right-12'], duration: '900ms' });
-  useScrollEffect(infoRef, { effectClasses: ['fade-in', 'slide-in-from-left-12'], duration: '900ms' });
+  useScrollEffect(infoRef, { effectClasses: ['fade-in', 'slide-in-from-bottom-12'], duration: '900ms' });
 
-
-  // Placeholder for form submission
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // Add form submission logic here
-    alert("Form submitted! (This is a placeholder)");
-  };
+  const socialLinks = [
+    {
+      name: 'LinkedIn',
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/deepakbagada', // Replace with actual link
+      ariaLabel: 'Deepak Bagada on LinkedIn',
+    },
+    {
+      name: 'GitHub',
+      icon: Github,
+      url: 'https://github.com/deepakbagada', // Replace with actual link
+      ariaLabel: 'Deepak Bagada on GitHub',
+    },
+    {
+      name: 'Twitter / X',
+      icon: Twitter,
+      url: 'https://x.com/deepakbagada', // Replace with actual link
+      ariaLabel: 'Deepak Bagada on Twitter X',
+    },
+    {
+      name: 'Instagram',
+      icon: Instagram,
+      url: 'https://instagram.com/deepakbagada_dev', // Replace with actual link
+      ariaLabel: 'Deepak Bagada on Instagram',
+    },
+    {
+      name: 'WhatsApp',
+      icon: MessageSquare, // Using MessageSquare as a WhatsApp-like icon
+      url: 'https://wa.me/910000000000', // Replace with actual WhatsApp number
+      ariaLabel: 'Chat with Deepak Bagada on WhatsApp',
+    },
+  ];
 
   return (
     <section id="contact" ref={sectionRef} className="bg-gradient-to-b from-background/70 to-background backdrop-blur-md">
@@ -42,75 +63,73 @@ export default function ContactSection() {
             Let's Connect
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Have a project in mind or just want to say hi? Feel free to reach out.
+            I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate. Reach out and let's build something amazing together!
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2 max-w-6xl mx-auto">
-          <div ref={infoRef} className="space-y-8 opacity-0 transform">
-            <h3 className="text-2xl font-semibold text-foreground">Contact Information</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-card/80 shadow-md">
-                <Mail className="h-6 w-6 text-primary mt-1" />
+        <div ref={infoRef} className="max-w-4xl mx-auto space-y-12 opacity-0 transform">
+          {/* Contact Details */}
+          <div>
+            <h3 className="text-3xl font-semibold text-foreground mb-6 text-center lg:text-left">Contact Details</h3>
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="flex items-start space-x-4 p-6 rounded-lg bg-card/80 shadow-lg hover:shadow-primary/20 transition-shadow">
+                <Mail className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-foreground">Email</h4>
-                  <a href="mailto:deepak.bagada@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  <h4 className="font-semibold text-xl text-foreground mb-1">Email</h4>
+                  <a href="mailto:deepak.bagada@example.com" className="text-muted-foreground hover:text-primary transition-colors break-all">
                     deepak.bagada@example.com
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-card/80 shadow-md">
-                <Phone className="h-6 w-6 text-primary mt-1" />
+              <div className="flex items-start space-x-4 p-6 rounded-lg bg-card/80 shadow-lg hover:shadow-primary/20 transition-shadow">
+                <Phone className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-foreground">Phone</h4>
-                  <a href="tel:+910000000000" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 (000) 000-0000 (Placeholder)
+                  <h4 className="font-semibold text-xl text-foreground mb-1">Phone / WhatsApp</h4>
+                  <a href="tel:+910000000000" className="text-muted-foreground hover:text-primary transition-colors block">
+                    +91 (000) 000-0000 (Call)
+                  </a>
+                   <a href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors block">
+                    Chat on WhatsApp
                   </a>
                 </div>
               </div>
-              <div className="flex items-start space-x-3 p-4 rounded-lg bg-card/80 shadow-md">
-                <MapPin className="h-6 w-6 text-primary mt-1" />
+              <div className="lg:col-span-2 flex items-start space-x-4 p-6 rounded-lg bg-card/80 shadow-lg hover:shadow-primary/20 transition-shadow">
+                <MapPin className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-foreground">Location</h4>
+                  <h4 className="font-semibold text-xl text-foreground mb-1">Location</h4>
                   <p className="text-muted-foreground">Junagadh, Gujarat, India</p>
+                  <p className="text-xs text-muted-foreground/70 mt-1">Available for remote work globally.</p>
                 </div>
               </div>
             </div>
-             <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-2 text-foreground">Availability</h4>
-                <p className="text-muted-foreground">Open for new projects and collaborations. Let's build something amazing together!</p>
+          </div>
+
+          {/* Social Media Section */}
+          <div className="pt-6">
+            <h3 className="text-3xl font-semibold text-foreground mb-8 text-center lg:text-left">Follow My Work</h3>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
+              {socialLinks.map((social) => (
+                <Button
+                  key={social.name}
+                  variant="outline"
+                  size="lg" // Made icons slightly larger
+                  className="p-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full  hover:bg-primary/10 group"
+                  asChild
+                >
+                  <Link href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.ariaLabel}>
+                    <social.icon className="h-6 w-6 sm:h-7 sm:w-7 text-muted-foreground group-hover:text-primary transition-colors" />
+                  </Link>
+                </Button>
+              ))}
             </div>
           </div>
 
-          <div ref={cardRef} className="opacity-0 transform">
-            <Card className="bg-card/80 backdrop-blur-sm shadow-xl p-2">
-              <CardHeader>
-                <CardTitle className="text-2xl font-semibold text-foreground">Send a Message</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-foreground">Full Name</Label>
-                    <Input id="name" placeholder="Your Name" required className="bg-input placeholder:text-muted-foreground/70"/>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground">Email Address</Label>
-                    <Input id="email" type="email" placeholder="your@email.com" required  className="bg-input placeholder:text-muted-foreground/70"/>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-foreground">Subject</Label>
-                    <Input id="subject" placeholder="Project Inquiry"  className="bg-input placeholder:text-muted-foreground/70"/>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-foreground">Message</Label>
-                    <Textarea id="message" placeholder="Your message..." required rows={5} className="bg-input placeholder:text-muted-foreground/70"/>
-                  </div>
-                  <Button type="submit" className="w-full text-lg py-6 group" size="lg">
-                    Send Message <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+          {/* Availability */}
+          <div className="mt-10 pt-10 border-t border-border/30 text-center lg:text-left">
+            <h4 className="text-2xl font-semibold mb-3 text-foreground">Open to Opportunities</h4>
+            <p className="text-muted-foreground md:text-lg">
+              Currently accepting new projects and exploring collaborations. If you have an idea or a challenge, I'd love to hear about it.
+            </p>
           </div>
         </div>
       </div>
