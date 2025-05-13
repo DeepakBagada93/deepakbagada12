@@ -9,7 +9,7 @@ const projectsData = [
   {
     title: "AI-Powered E-commerce Platform",
     description: "A modern e-commerce solution with AI-driven product recommendations and personalized shopping experiences. Built with Next.js and integrated with Stripe.",
-    imageUrl: "/project-ecom.jpg", // Updated path
+    imageUrl: "/deepak demo.png", // Updated path
     tags: ["Next.js", "React", "AI", "Stripe", "Tailwind CSS"],
     liveLink: "#",
     sourceLink: "#",
@@ -17,21 +17,21 @@ const projectsData = [
   {
     title: "Custom AI Agent for Customer Support",
     description: "Developed an AI agent using Genkit to automate customer support queries, improving response times and user satisfaction for a SaaS product.",
-    imageUrl: "/project-chatbot.jpg", // Updated path
+    imageUrl: "/deepak demo.png", // Updated path
     tags: ["Genkit", "AI Agent", "NLP", "SaaS", "Node.js"],
     liveLink: "#",
   },
   {
     title: "Lead Generation Dashboard (Marketing)",
     description: "A comprehensive dashboard for tracking marketing campaign performance and lead generation metrics. Built with React and data visualization libraries.",
-    imageUrl: "/project-dashboard.jpg", // Updated path
+    imageUrl: "/deepak demo.png", // Updated path
     tags: ["React", "Marketing Analytics", "Charts.js", "API Integration"],
     sourceLink: "#",
   },
   {
     title: "WordPress Portfolio Site for Artist",
     description: "Designed and developed a visually appealing portfolio website for a local artist using WordPress, focusing on ease of content management.",
-    imageUrl: "/project-wordpress.jpg", // Updated path
+    imageUrl: "/deepak demo.png", // Updated path
     tags: ["WordPress", "PHP", "CSS", "Responsive Design"],
     liveLink: "#",
   },
