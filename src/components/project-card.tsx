@@ -11,7 +11,6 @@ interface ProjectCardProps {
   title: string;
   description: string;
   imageUrl: string;
-  imageHint: string;
   tags: string[];
   liveLink?: string;
   sourceLink?: string;
@@ -22,7 +21,6 @@ export default function ProjectCard({
   title,
   description,
   imageUrl,
-  imageHint,
   tags,
   liveLink,
   sourceLink,
@@ -37,7 +35,6 @@ export default function ProjectCard({
           layout="fill"
           objectFit="cover"
           className="transition-transform duration-300 group-hover:scale-105"
-          data-ai-hint={imageHint}
         />
       </div>
       <CardHeader className="pb-3">
@@ -76,3 +73,4 @@ export default function ProjectCard({
     </Card>
   );
 }
+

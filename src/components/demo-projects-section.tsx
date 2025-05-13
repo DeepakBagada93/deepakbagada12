@@ -9,8 +9,7 @@ const projectsData = [
   {
     title: "AI-Powered E-commerce Platform",
     description: "A modern e-commerce solution with AI-driven product recommendations and personalized shopping experiences. Built with Next.js and integrated with Stripe.",
-    imageUrl: "https://picsum.photos/seed/ecom/600/400",
-    imageHint: "e-commerce online store",
+    imageUrl: "/project-ecom.jpg", // Updated path
     tags: ["Next.js", "React", "AI", "Stripe", "Tailwind CSS"],
     liveLink: "#",
     sourceLink: "#",
@@ -18,24 +17,21 @@ const projectsData = [
   {
     title: "Custom AI Agent for Customer Support",
     description: "Developed an AI agent using Genkit to automate customer support queries, improving response times and user satisfaction for a SaaS product.",
-    imageUrl: "https://picsum.photos/seed/chatbot/600/400",
-    imageHint: "chatbot customer service",
+    imageUrl: "/project-chatbot.jpg", // Updated path
     tags: ["Genkit", "AI Agent", "NLP", "SaaS", "Node.js"],
     liveLink: "#",
   },
   {
     title: "Lead Generation Dashboard (Marketing)",
     description: "A comprehensive dashboard for tracking marketing campaign performance and lead generation metrics. Built with React and data visualization libraries.",
-    imageUrl: "https://picsum.photos/seed/dashboard/600/400",
-    imageHint: "dashboard analytics chart",
+    imageUrl: "/project-dashboard.jpg", // Updated path
     tags: ["React", "Marketing Analytics", "Charts.js", "API Integration"],
     sourceLink: "#",
   },
   {
     title: "WordPress Portfolio Site for Artist",
     description: "Designed and developed a visually appealing portfolio website for a local artist using WordPress, focusing on ease of content management.",
-    imageUrl: "https://picsum.photos/seed/wordpress/600/400",
-    imageHint: "art portfolio website",
+    imageUrl: "/project-wordpress.jpg", // Updated path
     tags: ["WordPress", "PHP", "CSS", "Responsive Design"],
     liveLink: "#",
   },
@@ -82,3 +78,4 @@ export default function DemoProjectsSection() {
     </section>
   );
 }
+

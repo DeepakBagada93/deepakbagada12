@@ -40,7 +40,7 @@ export default function HeroSection() {
           style={{ transform: `translateY(${offsetY * 0.3}px) scale(${1 - offsetY * 0.0005 < 0.5 ? 0.5 : 1 - offsetY * 0.0005})`, opacity: `${1 - offsetY * 0.0015 < 0 ? 0 : 1 - offsetY * 0.0015}` }}
         >
           <Image
-            src="/deepak-profile.jpg" // Updated to use image from public folder
+            src="/deepak bagada.png" // Updated to use image from public folder
             alt="Deepak Bagada"
             width={200}
             height={200}
