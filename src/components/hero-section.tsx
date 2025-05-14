@@ -42,9 +42,9 @@ export default function HeroSection() {
           <Image
             src="/deepak bagada.png" // Updated to use image from public folder
             alt="Deepak Bagada"
-            width={200}
-            height={200}
-            className="rounded-full border-4 border-primary shadow-xl aspect-square object-cover"
+            width={240} // Increased size
+            height={240} // Increased size
+            className="rounded-full border-4 border-primary shadow-2xl shadow-primary/50 aspect-square object-cover" // Added shadow-primary/50 for glow
             data-ai-hint="professional indian man"
             priority
           />
