@@ -12,9 +12,12 @@ export default function SiteHeader() {
           </svg>
           <span className="font-bold">Deepak Bagada</span>
         </Link>
-        <nav className="flex flex-1 items-center space-x-6">
+        <nav className="flex flex-1 items-center space-x-4 md:space-x-6">
           <Link href="/#expertise" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Expertise
+          </Link>
+          <Link href="/#how-i-work" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Process
           </Link>
           <Link href="/#projects" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Projects
