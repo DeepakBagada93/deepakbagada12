@@ -1,3 +1,4 @@
+
 // src/components/demo-projects-section.tsx
 "use client";
 
@@ -63,7 +64,7 @@ export default function DemoProjectsSection() {
             Featured Projects
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Here are some of the projects I've worked on, showcasing my skills in web development, AI, and creating impactful digital solutions.
+            Here are some projects showcasing my skills as a web developer in Junagadh and an AI SaaS expert, delivering impactful digital solutions.
           </p>
         </div>
 
@@ -78,4 +79,3 @@ export default function DemoProjectsSection() {
     </section>
   );
 }
-

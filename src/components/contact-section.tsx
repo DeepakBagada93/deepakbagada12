@@ -1,3 +1,4 @@
+
 // src/components/contact-section.tsx
 "use client";
 
@@ -19,31 +20,31 @@ export default function ContactSection() {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://www.linkedin.com/in/deepakbagada', 
+      url: 'https://www.linkedin.com/in/deepakbagada',
       ariaLabel: 'Deepak Bagada on LinkedIn',
     },
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/deepakbagada', 
+      url: 'https://github.com/deepakbagada',
       ariaLabel: 'Deepak Bagada on GitHub',
     },
     {
       name: 'Twitter / X',
       icon: Twitter,
-      url: 'https://x.com/deepakbagada', 
+      url: 'https://x.com/deepakbagada',
       ariaLabel: 'Deepak Bagada on Twitter X',
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      url: 'https://instagram.com/deepakbagada_dev', 
+      url: 'https://instagram.com/deepakbagada_dev',
       ariaLabel: 'Deepak Bagada on Instagram',
     },
     {
       name: 'WhatsApp',
-      icon: MessageSquare, 
-      url: 'https://wa.me/917016179234', 
+      icon: MessageSquare,
+      url: 'https://wa.me/917016179234',
       ariaLabel: 'Chat with Deepak Bagada on WhatsApp',
     },
   ];
@@ -51,7 +52,7 @@ export default function ContactSection() {
   return (
     <section id="contact" ref={sectionRef} className="bg-gradient-to-b from-background/70 to-background backdrop-blur-md">
       <div className="container px-4 md:px-6">
-        <div 
+        <div
           ref={titleRef}
           className="flex flex-col items-center space-y-4 text-center mb-12 opacity-0 transform"
         >
@@ -62,7 +63,7 @@ export default function ContactSection() {
             Let's Connect
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate. Reach out and let's build something amazing together!
+            As your go-to web developer in Junagadh and AI SaaS expert, I'm always excited to discuss new projects. Reach out and let's build something amazing together!
           </p>
         </div>
 
@@ -103,7 +104,7 @@ export default function ContactSection() {
                 <Button
                   key={social.name}
                   variant="outline"
-                  size="lg" 
+                  size="lg"
                   className="p-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full  hover:bg-primary/10 group"
                   asChild
                 >
@@ -119,7 +120,7 @@ export default function ContactSection() {
           <div className="mt-10 pt-10 border-t border-border/30 text-center lg:text-left">
             <h4 className="text-2xl font-semibold mb-3 text-foreground">Open to Opportunities</h4>
             <p className="text-muted-foreground md:text-lg">
-              Currently accepting new projects and exploring collaborations. If you have an idea or a challenge, I'd love to hear about it. Based in Junagadh, Gujarat, and available for remote work globally.
+              Currently accepting new projects and exploring collaborations. If you have an idea or a challenge, as a web developer and AI SaaS expert in Junagadh, I'd love to hear about it. Available for remote work globally.
             </p>
           </div>
         </div>

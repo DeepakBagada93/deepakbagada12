@@ -1,3 +1,4 @@
+
 // src/components/how-i-work-section.tsx
 "use client";
 
@@ -90,7 +91,7 @@ export default function HowIWorkSection() {
             How I Bring Your Ideas to Life
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            I follow a structured and collaborative approach to ensure your project is a success, from initial concept to final launch and beyond.
+            As an experienced web developer in Junagadh and AI SaaS expert, I follow a structured and collaborative approach to ensure your project is a success, from initial concept to final launch and beyond.
           </p>
         </div>
 

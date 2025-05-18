@@ -1,3 +1,4 @@
+
 // src/components/hero-section.tsx
 "use client";
 
@@ -29,19 +30,19 @@ export default function HeroSection() {
   return (
     <section ref={heroRef} id="hero" className="relative flex h-screen min-h-[600px] w-full flex-col items-center justify-center overflow-hidden text-center">
       {/* Background elements for parallax depth - optional */}
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-neutral-900 opacity-50"
         style={{ transform: `translateY(${offsetY * 0.1}px)` }}
       ></div>
-      
+
       <div className="container z-10 flex flex-col items-center px-4 md:px-6">
-        <div 
-          className="mb-8" 
+        <div
+          className="mb-8"
           style={{ transform: `translateY(${offsetY * 0.3}px) scale(${1 - offsetY * 0.0005 < 0.5 ? 0.5 : 1 - offsetY * 0.0005})`, opacity: `${1 - offsetY * 0.0015 < 0 ? 0 : 1 - offsetY * 0.0015}` }}
         >
           <Image
             src="/deepak bagada.png" // Updated to use image from public folder
-            alt="Deepak Bagada"
+            alt="Deepak Bagada - Web Developer in Junagadh, AI SaaS Expert"
             width={240} // Increased size
             height={240} // Increased size
             className="rounded-full border-4 border-primary shadow-2xl shadow-primary/50 aspect-square object-cover" // Added shadow-primary/50 for glow
@@ -49,28 +50,28 @@ export default function HeroSection() {
             priority
           />
         </div>
-        <h1 
+        <h1
           className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary via-teal-400 to-sky-300"
           style={{ transform: `translateY(${offsetY * 0.2}px)`, opacity: `${1 - offsetY * 0.001 < 0 ? 0 : 1 - offsetY * 0.001}` }}
         >
           Deepak Bagada
         </h1>
-        <p 
+        <p
           className="mt-4 max-w-[700px] text-lg text-muted-foreground md:text-xl"
           style={{ transform: `translateY(${offsetY * 0.15}px)`, opacity: `${1 - offsetY * 0.0008 < 0 ? 0 : 1 - offsetY * 0.0008}` }}
         >
           Web Developer | AI SaaS Expert | Marketing Specialist
         </p>
-        <p 
+        <p
           className="mt-2 max-w-[700px] text-md text-muted-foreground"
           style={{ transform: `translateY(${offsetY * 0.1}px)`, opacity: `${1 - offsetY * 0.0007 < 0 ? 0 : 1 - offsetY * 0.0007}` }}
         >
-          Crafting innovative digital solutions from Junagadh, Gujarat.
+          Your trusted web developer in Junagadh and AI SaaS expert, crafting innovative digital solutions.
         </p>
-        <Button 
-          asChild 
-          className="mt-8 animate-bounce" 
-          variant="outline" 
+        <Button
+          asChild
+          className="mt-8 animate-bounce"
+          variant="outline"
           size="lg"
           style={{ opacity: `${1 - offsetY * 0.002 < 0 ? 0 : 1 - offsetY * 0.002}` }}
           >
@@ -85,14 +86,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-// Add to tailwind.config.ts if not present in globals or tailwindcss-animate:
-// keyframes: {
-//   'spin-slow': {
-//     '0%, 100%': { transform: 'rotate(0deg)' },
-//     '50%': { transform: 'rotate(10deg)' },
-//   },
-// },
-// animation: {
-//   'spin-slow': 'spin-slow 6s linear infinite',
-// }
