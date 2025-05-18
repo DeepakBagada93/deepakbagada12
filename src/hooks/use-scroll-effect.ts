@@ -1,3 +1,4 @@
+
 // src/hooks/use-scroll-effect.ts
 "use client";
 
@@ -20,8 +21,8 @@ export function useScrollEffect(
     threshold = 0.15, // A bit more visibility before triggering
     triggerOnce = true,
     animationClass = 'animate-in',
-    effectClasses = ['fade-in', 'slide-in-from-bottom-8'], // Adjusted slide distance
-    duration = '700ms',
+    effectClasses = ['fade-in', 'slide-in-from-bottom-8', 'zoom-in-95'], // Adjusted slide distance and added zoom
+    duration = '800ms', // Adjusted duration
   } = options || {};
 
   useEffect(() => {
