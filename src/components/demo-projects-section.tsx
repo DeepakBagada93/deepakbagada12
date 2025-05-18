@@ -9,31 +9,31 @@ import { useScrollEffect } from '@/hooks/use-scroll-effect';
 const projectsData = [
   {
     title: "AI-Powered E-commerce Platform",
-    description: "A modern e-commerce solution with AI-driven product recommendations and personalized shopping experiences. Built with Next.js and integrated with Stripe.",
-    imageUrl: "/deepak demo.png", // Updated path
-    tags: ["Next.js", "React", "AI", "Stripe", "Tailwind CSS"],
+    description: "Developed a cutting-edge e-commerce solution leveraging Next.js for superior performance and AI-driven product recommendations for personalized shopping. Integrated Stripe for secure payments. This project showcases my ability as a web developer to build complex, scalable online stores.",
+    imageUrl: "/deepak demo.png",
+    tags: ["Next.js", "React", "AI", "Stripe", "Tailwind CSS", "E-commerce"],
     liveLink: "#",
     sourceLink: "#",
   },
   {
-    title: "Custom AI Agent for Customer Support",
-    description: "Developed an AI agent using Genkit to automate customer support queries, improving response times and user satisfaction for a SaaS product.",
-    imageUrl: "/deepak demo.png", // Updated path
-    tags: ["Genkit", "AI Agent", "NLP", "SaaS", "Node.js"],
+    title: "Custom AI Agent for SaaS Support",
+    description: "As an AI SaaS expert, I designed and implemented a custom AI agent using Genkit to automate customer support queries for a SaaS product. This significantly improved response times, user satisfaction, and operational efficiency by handling common issues intelligently.",
+    imageUrl: "/deepak demo.png",
+    tags: ["Genkit", "AI Agent", "NLP", "SaaS", "Node.js", "Customer Support"],
     liveLink: "#",
   },
   {
     title: "Lead Generation Dashboard (Marketing)",
-    description: "A comprehensive dashboard for tracking marketing campaign performance and lead generation metrics. Built with React and data visualization libraries.",
-    imageUrl: "/deepak demo.png", // Updated path
-    tags: ["React", "Marketing Analytics", "Charts.js", "API Integration"],
+    description: "Created a comprehensive dashboard for a marketing agency to track campaign performance and lead generation metrics effectively. Built with React and data visualization libraries (e.g., Charts.js), providing actionable insights to optimize marketing spend and strategies.",
+    imageUrl: "/deepak demo.png",
+    tags: ["React", "Marketing Analytics", "Data Visualization", "API Integration"],
     sourceLink: "#",
   },
   {
-    title: "WordPress Portfolio Site for Artist",
-    description: "Designed and developed a visually appealing portfolio website for a local artist using WordPress, focusing on ease of content management.",
-    imageUrl: "/deepak demo.png", // Updated path
-    tags: ["WordPress", "PHP", "CSS", "Responsive Design"],
+    title: "WordPress Portfolio for Junagadh Artist",
+    description: "Designed and developed a visually compelling portfolio website for a local Junagadh artist using WordPress. Focused on ease of content management for the artist and a responsive design that beautifully showcases their work across all devices. This highlights my skills as a versatile web developer in Junagadh.",
+    imageUrl: "/deepak demo.png",
+    tags: ["WordPress", "PHP", "CSS", "Responsive Design", "Portfolio"],
     liveLink: "#",
   },
 ];
@@ -64,7 +64,7 @@ export default function DemoProjectsSection() {
             Featured Projects
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Here are some projects showcasing my skills as a web developer in Junagadh and an AI SaaS expert, delivering impactful digital solutions.
+            Here are some projects showcasing my skills as a web developer in Junagadh and an AI SaaS expert. These examples demonstrate my commitment to delivering impactful digital solutions and innovative applications.
           </p>
         </div>
 

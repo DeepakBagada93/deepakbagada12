@@ -26,7 +26,13 @@ export const metadata: Metadata = {
     'PHP developer junagadh',
     'WordPress developer junagadh',
     'custom AI agent junagadh',
-    'webapp developer in junagadh'
+    'webapp developer in junagadh',
+    'freelance web developer junagadh',
+    'e-commerce website developer junagadh',
+    'custom software development junagadh',
+    'AI business solutions junagadh',
+    'Genkit AI developer junagadh',
+    'local SEO expert junagadh'
   ],
 };
 
