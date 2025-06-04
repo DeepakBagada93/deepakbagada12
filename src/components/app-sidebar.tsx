@@ -25,8 +25,9 @@ export default function AppSidebar() {
     <Sidebar side="left" collapsible="icon" variant="sidebar">
       <SidebarHeader className="p-3 justify-center items-center group-data-[collapsible=icon]:p-2.5">
         <Link href="/" className="flex items-center gap-2 w-full group-data-[collapsible=icon]:justify-center">
-           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 text-primary flex-shrink-0">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-7 w-7 text-primary flex-shrink-0">
+            <path d="M8.5 7C7.67157 7 7 7.67157 7 8.5V15.5C7 16.3284 7.67157 17 8.5 17H11" />
+            <path d="M15.5 7C16.3284 7 17 7.67157 17 8.5V15.5C17 16.3284 16.3284 17 15.5 17H13" />
           </svg>
           <span className="font-semibold text-lg group-data-[collapsible=icon]:hidden whitespace-nowrap">Deepak Bagada</span>
         </Link>
