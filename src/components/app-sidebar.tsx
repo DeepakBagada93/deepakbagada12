@@ -10,14 +10,13 @@ import {
   SidebarMenuItem,
   SidebarMenuButton,
 } from '@/components/ui/sidebar';
-import { Home, Briefcase, Settings, Layers, UploadCloud, Send } from 'lucide-react'; // Added Layers for Projects
+import { Home, Briefcase, Settings, Layers, Send } from 'lucide-react'; // Removed UploadCloud
 
 const navItems = [
   { href: "/#hero", label: "Home", icon: Home },
   { href: "/#expertise", label: "Expertise", icon: Briefcase },
   { href: "/#how-i-work", label: "Process", icon: Settings },
-  { href: "/#projects", label: "Projects", icon: Layers }, // Added Projects link
-  { href: "/#image-upload", label: "Upload Demo", icon: UploadCloud },
+  { href: "/#projects", label: "Projects", icon: Layers },
   { href: "/#contact", label: "Contact", icon: Send },
 ];
 
