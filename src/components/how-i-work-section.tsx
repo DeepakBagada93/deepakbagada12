@@ -36,27 +36,27 @@ const workProcessData = [
   {
     icon: Lightbulb,
     title: "1. Discovery & Planning",
-    description: "We begin by deeply understanding your vision, objectives, target audience, and unique project requirements. This crucial phase involves detailed discussions, market research specific to Junagadh if applicable, and strategic planning to define a clear project scope, feature set, realistic timeline, and key success metrics. This ensures we are aligned from the very start.",
+    description: "We begin by deeply understanding your vision, objectives, target audience, and unique project requirements. This crucial phase involves detailed discussions, market research specific to Junagadh if applicable, and strategic planning to define a clear project scope, feature set, realistic timeline, and key success metrics. As your web developer in Junagadh, I ensure we are aligned from the very start for a successful outcome.",
   },
   {
     icon: Palette,
     title: "2. Design & Prototyping",
-    description: "Next, as your creative web developer, I focus on crafting intuitive and engaging user interfaces (UI) and user experiences (UX). This involves creating wireframes, high-fidelity mockups, and interactive prototypes. The goal is a design that's not only visually stunning and user-friendly but also perfectly reflects your brand identity and resonates with your users.",
+    description: "Next, as your creative web developer, I focus on crafting intuitive and engaging user interfaces (UI) and user experiences (UX). This involves creating wireframes, high-fidelity mockups, and interactive prototypes. The goal is a design that's not only visually stunning and user-friendly but also perfectly reflects your brand identity and resonates with your users, whether they are in Junagadh or global.",
   },
   {
     icon: CodeXml,
     title: "3. Development & Coding",
-    description: "With a solid plan and design approved, I transition into the development phase. As an expert web developer in Junagadh, I write clean, efficient, and scalable code using modern technologies like Next.js, React, or Laravel, and for AI tasks, Genkit. You'll receive regular progress updates and opportunities for feedback throughout this stage, ensuring transparency.",
+    description: "With a solid plan and design approved, I transition into the development phase. As an expert web developer in Junagadh, I write clean, efficient, and scalable code using modern technologies like Next.js, React, or Laravel, and for AI tasks, Genkit. You'll receive regular progress updates and opportunities for feedback throughout this stage, ensuring transparency and quality.",
   },
   {
     icon: ShieldCheck,
     title: "4. Testing & Quality Assurance",
-    description: "Rigorous testing is paramount. I conduct comprehensive quality assurance across various devices, browsers, and screen sizes to ensure your web application is bug-free, secure, performs optimally under load, and provides a seamless, accessible user experience for everyone.",
+    description: "Rigorous testing is paramount. I conduct comprehensive quality assurance across various devices, browsers, and screen sizes to ensure your web application is bug-free, secure, performs optimally under load, and provides a seamless, accessible user experience for everyone. My standards as an AI SaaS expert in Junagadh demand thoroughness.",
   },
   {
     icon: Rocket,
     title: "5. Deployment & Launch",
-    description: "Once thorough testing is complete and you've given your final approval, I manage the deployment process. This involves launching your web application to a live server, configuring necessary services, and ensuring a smooth transition from development to production. I also provide any necessary training for you and your team.",
+    description: "Once thorough testing is complete and you've given your final approval, I manage the deployment process. This involves launching your web application to a live server, configuring necessary services, and ensuring a smooth transition from development to production. I also provide any necessary training for you and your team to manage your new Junagadh-based or wider-reaching platform.",
   },
   {
     icon: Wrench,
@@ -90,7 +90,7 @@ export default function HowIWorkSection() {
           <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
             How I Bring Your Ideas to Life
           </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
             As an experienced web developer in Junagadh and AI SaaS expert, I follow a structured and collaborative approach to ensure your project is a success. My process is designed for clarity, efficiency, and delivering high-quality results from initial concept to final launch and ongoing support.
           </p>
         </div>
@@ -106,3 +106,4 @@ export default function HowIWorkSection() {
     </section>
   );
 }
+

@@ -62,8 +62,8 @@ export default function ContactSection() {
           <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-foreground">
             Let's Connect
           </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            As your go-to web developer in Junagadh and AI SaaS expert, I'm always excited to discuss new projects. Reach out and let's build something amazing together!
+          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
+            As your go-to web developer in Junagadh and AI SaaS expert, I'm always excited to discuss new projects. Reach out and let's build something amazing together! Whether you're in Junagadh or anywhere else, I'm ready to help.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function ContactSection() {
           {/* Contact Details */}
           <div>
             <h3 className="text-3xl font-semibold text-foreground mb-6 text-center lg:text-left">Contact Details</h3>
-            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex items-start space-x-4 p-6 rounded-lg bg-card/80 shadow-lg hover:shadow-primary/20 transition-shadow">
                 <Mail className="h-7 w-7 text-primary mt-1 flex-shrink-0" />
                 <div>
@@ -99,17 +99,17 @@ export default function ContactSection() {
           {/* Social Media Section */}
           <div className="pt-6">
             <h3 className="text-3xl font-semibold text-foreground mb-8 text-center lg:text-left">Follow My Work</h3>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               {socialLinks.map((social) => (
                 <Button
                   key={social.name}
                   variant="outline"
                   size="lg"
-                  className="p-0 h-14 w-14 sm:h-16 sm:w-16 rounded-full  hover:bg-primary/10 group"
+                  className="p-0 h-12 w-12 sm:h-14 sm:w-14 rounded-full hover:bg-primary/10 group"
                   asChild
                 >
                   <Link href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.ariaLabel}>
-                    <social.icon className="h-6 w-6 sm:h-7 sm:w-7 text-muted-foreground group-hover:text-primary transition-colors" />
+                    <social.icon className="h-5 w-5 sm:h-6 sm:w-6 text-muted-foreground group-hover:text-primary transition-colors" />
                   </Link>
                 </Button>
               ))}
@@ -128,3 +128,4 @@ export default function ContactSection() {
     </section>
   );
 }
+
