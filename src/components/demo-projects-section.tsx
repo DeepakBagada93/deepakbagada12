@@ -8,11 +8,11 @@ import { Layers, ShoppingCart, MessageSquare } from 'lucide-react'; // Example i
 
 const projectsData = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce website with product listings, cart functionality, and secure checkout. Built with Next.js and Stripe integration.",
+    title: "AI WordPress Blog Management Software",
+    description: "A smart software solution leveraging AI to automate WordPress blog creation, content scheduling, SEO optimization, and performance tracking for efficient content marketing.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "online store",
-    tags: ["Next.js", "React", "Tailwind CSS", "Stripe", "TypeScript"],
+    imageHint: "blog dashboard",
+    tags: ["AI Automation", "WordPress", "Content Management", "SaaS"],
     liveLink: "#",
     sourceLink: "#",
   },
@@ -71,6 +71,7 @@ export default function DemoProjectsSection() {
                 title={project.title}
                 description={project.description}
                 imageUrl={project.imageUrl}
+                imageHint={project.imageHint}
                 tags={project.tags}
                 liveLink={project.liveLink}
                 sourceLink={project.sourceLink}
