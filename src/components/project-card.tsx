@@ -1,5 +1,4 @@
 // src/components/project-card.tsx
-import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -10,8 +9,6 @@ import { cn } from '@/lib/utils';
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageUrl: string;
-  imageHint?: string; // Added for data-ai-hint
   tags: string[];
   liveLink?: string;
   sourceLink?: string;
@@ -21,8 +18,6 @@ interface ProjectCardProps {
 export default function ProjectCard({
   title,
   description,
-  imageUrl,
-  imageHint,
   tags,
   liveLink,
   sourceLink,
@@ -30,16 +25,6 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card className={cn("flex flex-col h-full bg-card/80 backdrop-blur-sm shadow-lg hover:shadow-primary/30 transition-shadow duration-300 overflow-hidden group", className)}>
-      <div className="relative w-full h-48 md:h-56 overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-500 ease-in-out group-hover:scale-110"
-          data-ai-hint={imageHint || "project image"}
-        />
-      </div>
       <CardHeader className="pb-3">
         <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">{title}</CardTitle>
       </CardHeader>

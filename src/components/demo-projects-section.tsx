@@ -10,8 +10,6 @@ const projectsData = [
   {
     title: "AI WordPress Blog Management Software",
     description: "A smart software solution leveraging AI to automate WordPress blog creation, content scheduling, SEO optimization, and performance tracking for efficient content marketing.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "blog dashboard",
     tags: ["AI Automation", "WordPress", "Content Management", "SaaS"],
     liveLink: "#",
     sourceLink: "#",
@@ -19,16 +17,12 @@ const projectsData = [
   {
     title: "AI Powered Grammar & Content Suggestion Webapp",
     description: "A sophisticated web application that leverages AI to provide real-time grammar checking and intelligent content suggestions, helping users create polished and effective written material.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "writing editor",
     tags: ["AI Automation", "NLP", "Web Application", "SaaS"],
     liveLink: "#",
   },
   {
     title: "AI Powered Social Media Post Creation Webapp",
     description: "An innovative web application that utilizes AI to help users generate engaging social media posts, suggest relevant hashtags, and schedule content across multiple platforms.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "social media planner",
     tags: ["AI Automation", "Social Media", "Content Creation", "SaaS"],
   },
 ];
@@ -69,8 +63,6 @@ export default function DemoProjectsSection() {
               <ProjectCard
                 title={project.title}
                 description={project.description}
-                imageUrl={project.imageUrl}
-                imageHint={project.imageHint}
                 tags={project.tags}
                 liveLink={project.liveLink}
                 sourceLink={project.sourceLink}
