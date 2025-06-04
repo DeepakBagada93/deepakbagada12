@@ -11,7 +11,7 @@ const projectsData = [
     title: "AI WordPress Blog Management Software",
     description: "A smart software solution leveraging AI to automate WordPress blog creation, content scheduling, SEO optimization, and performance tracking for efficient content marketing.",
     tags: ["AI Automation", "WordPress", "Content Management", "SaaS"],
-    liveLink: "#",
+    liveLink: "https://dbwp.vercel.app/",
     sourceLink: "#",
   },
   {
