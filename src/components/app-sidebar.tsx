@@ -10,13 +10,13 @@ import {
   SidebarMenuItem,
   SidebarMenuButton,
 } from '@/components/ui/sidebar';
-import { Home, Briefcase, Settings, Send, LayoutGrid, CodeXml } from 'lucide-react';
+import { Home, Briefcase, Settings, Send, UploadCloud, CodeXml } from 'lucide-react';
 
 const navItems = [
   { href: "/#hero", label: "Home", icon: Home },
   { href: "/#expertise", label: "Expertise", icon: Briefcase },
   { href: "/#how-i-work", label: "Process", icon: Settings },
-  { href: "/#projects", label: "Projects", icon: LayoutGrid },
+  { href: "/#image-upload", label: "Upload Demo", icon: UploadCloud },
   { href: "/#contact", label: "Contact", icon: Send },
 ];
 
@@ -42,7 +42,7 @@ export default function AppSidebar() {
                   children: item.label, 
                   side: 'right', 
                   align: 'center',
-                  className: "group-data-[collapsible=icon]:block hidden" // Show tooltip only when sidebar is icon-collapsed
+                  className: "group-data-[collapsible=icon]:block hidden"
                 }}
                 className="justify-start"
               >
