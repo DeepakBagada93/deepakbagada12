@@ -24,6 +24,7 @@ const projectsData = [
     title: "AI Powered Social Media Post Creation Webapp",
     description: "An innovative web application that utilizes AI to help users generate engaging social media posts, suggest relevant hashtags, and schedule content across multiple platforms.",
     tags: ["AI Automation", "Social Media", "Content Creation", "SaaS"],
+    liveLink: "https://dbsaasnext.vercel.app/",
   },
 ];
 
