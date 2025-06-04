@@ -20,18 +20,16 @@ const projectsData = [
     title: "AI Powered Grammar & Content Suggestion Webapp",
     description: "A sophisticated web application that leverages AI to provide real-time grammar checking and intelligent content suggestions, helping users create polished and effective written material.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "writing editor", // Updated image hint
+    imageHint: "writing editor",
     tags: ["AI Automation", "NLP", "Web Application", "SaaS"],
     liveLink: "#",
-    // sourceLink: "#", // Removed if not specified for new project
   },
   {
-    title: "Project Management Tool",
-    description: "A collaborative project management application with task tracking, team communication, and progress visualization features.",
+    title: "AI Powered Social Media Post Creation Webapp",
+    description: "An innovative web application that utilizes AI to help users generate engaging social media posts, suggest relevant hashtags, and schedule content across multiple platforms.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "dashboard interface",
-    tags: ["Laravel", "PHP", "Vue.js", "MySQL", "Bootstrap"],
-    sourceLink: "#",
+    imageHint: "social media planner",
+    tags: ["AI Automation", "Social Media", "Content Creation", "SaaS"],
   },
 ];
 
