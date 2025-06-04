@@ -17,12 +17,13 @@ const projectsData = [
     sourceLink: "#",
   },
   {
-    title: "AI Customer Support Chatbot",
-    description: "An intelligent chatbot for customer service, leveraging Genkit for natural language understanding and providing instant responses.",
+    title: "AI Powered Grammar & Content Suggestion Webapp",
+    description: "A sophisticated web application that leverages AI to provide real-time grammar checking and intelligent content suggestions, helping users create polished and effective written material.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "chatbot interface",
-    tags: ["Genkit", "AI", "SaaS", "Next.js", "Firebase"],
+    imageHint: "writing editor", // Updated image hint
+    tags: ["AI Automation", "NLP", "Web Application", "SaaS"],
     liveLink: "#",
+    // sourceLink: "#", // Removed if not specified for new project
   },
   {
     title: "Project Management Tool",
