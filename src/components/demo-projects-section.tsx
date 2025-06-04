@@ -12,13 +12,13 @@ const projectsData = [
     description: "A smart software solution leveraging AI to automate WordPress blog creation, content scheduling, SEO optimization, and performance tracking for efficient content marketing.",
     tags: ["AI Automation", "WordPress", "Content Management", "SaaS"],
     liveLink: "https://dbwp.vercel.app/",
-    sourceLink: "#",
+    sourceLink: "#", // Keep sourceLink if it exists or set to "#" if not applicable
   },
   {
     title: "AI Powered Grammar & Content Suggestion Webapp",
     description: "A sophisticated web application that leverages AI to provide real-time grammar checking and intelligent content suggestions, helping users create polished and effective written material.",
     tags: ["AI Automation", "NLP", "Web Application", "SaaS"],
-    liveLink: "#",
+    liveLink: "https://deepakgramai.vercel.app/",
   },
   {
     title: "AI Powered Social Media Post Creation Webapp",
