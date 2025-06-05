@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     'AI business solutions junagadh',
     'Genkit AI developer junagadh',
     'local SEO expert junagadh'
+  
   ],
 };
 
